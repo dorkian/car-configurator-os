@@ -2,8 +2,8 @@
 
 ## Vehicle Naming
 
-**Official name: Falcon X**
-Fictional — avoids manufacturer IP/legal issues while signaling automotive taste.
+**Project name: Falcon X**
+Fictional — avoids manufacturer IP/legal issues while signaling automotive taste. "Official" here means "the name this project uses," not an official manufacturer designation; Falcon X is not a real vehicle.
 Alternatives on file: Velaro GT, Aureon S.
 
 The project's personal story (README About, LinkedIn, Medium, ashkian.com) *can and should* reference Ash's professional experience with automotive configurators — but the open-source app itself uses Falcon X only.

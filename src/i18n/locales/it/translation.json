@@ -115,7 +115,7 @@
       },
       "conflictAware": {
         "title": "Pacchetti con controllo conflitti",
-        "desc": "Le combinazioni di opzioni incompatibili vengono rilevate e segnalate automaticamente — la stessa logica usata da un vero configuratore di casa automobilistica."
+        "desc": "Le combinazioni di opzioni incompatibili vengono rilevate e segnalate automaticamente — lo stesso tipo di logica usata dai configuratori automobilistici in produzione."
       },
       "typedDomain": {
         "title": "Modello di dominio tipizzato",
@@ -134,6 +134,6 @@
     "screenshotsPlaceholder": "Screenshot in arrivo — avvia il configuratore per vederlo dal vivo",
     "stackHeading": "Realizzato con",
     "footer": "Car Configurator OS · Licenza MIT · Open source",
-    "footerDisclaimer": "Falcon X e Aureon S sono veicoli immaginari creati per questa demo. Tutte le immagini dei veicoli sono generate tramite intelligenza artificiale. Questo progetto non è affiliato, sponsorizzato né rappresentativo di alcuna casa automobilistica reale."
+    "footerDisclaimer": "Car Configurator OS è un progetto demo indipendente creato solo a scopo dimostrativo. Falcon X e Aureon S sono veicoli immaginari, concettuali, e tutte le immagini dei veicoli sono generate tramite intelligenza artificiale a scopo illustrativo. Questo progetto non è affiliato, sponsorizzato, approvato o rappresentativo di alcuna casa automobilistica, distributore o proprietario di marchio reale, e le specifiche mostrate non sono dati ufficiali del produttore."
   }
 }

@@ -52,7 +52,7 @@ This is the first public release of Car Configurator OS — a fully client-side,
 
 ## Known limitations
 
-- Car imagery is placeholder (CSS color-branded gradient); real photography planned for v2
+- Car imagery is placeholder (CSS color-branded gradient); higher-fidelity AI-generated illustrative imagery planned for v2
 - Catalog is static JSON; a headless CMS or catalog API is planned for v2
 - English-only; i18n planned for v2
 - No OG image yet for social sharing previews
@@ -62,7 +62,7 @@ This is the first public release of Car Configurator OS — a fully client-side,
 ## What's next (v2 roadmap)
 
 - 3D car viewer with per-material shaders (Three.js)
-- Real car photography per trim/color/wheel combination
+- Higher-fidelity AI-generated illustrative imagery per trim/color/wheel combination
 - Headless catalog API (so stale URLs can resolve against live data)
 - User accounts + saved builds
 - i18n (RTL, multi-currency)

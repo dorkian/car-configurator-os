@@ -5,7 +5,7 @@ An open-source, client-side car configurator built with React, TypeScript, and V
 **Live demo:** _coming soon_
 **Author:** [Ashkan Dorkian](https://github.com/dorkian), AI-native frontend developer
 
-> Falcon X and Aureon S aren't real cars. Every image on this site is AI-generated, and this project has no ties to any actual automaker.
+> **Independent demo, not an official manufacturer configurator.** This project is an independent demo car configurator created for showcase purposes only. It is not affiliated with, endorsed by, sponsored by, or approved by any automotive manufacturer, distributor, or brand owner. Falcon X and Aureon S are fictional, concept-style vehicles. All vehicle visuals shown are AI-generated, illustrative images and do not depict real production vehicles or official manufacturer specifications.
 
 <p align="center">
   <img src="public/cars/falcon-x/hero/hero.jpg" alt="Falcon X configurator hero shot" width="49%" />
@@ -37,13 +37,13 @@ This is a recruiter-facing open-source app. The code is the portfolio; the engin
 
 ## Screenshots
 
+_AI-generated illustrative images of a fictional vehicle concept, pulled directly from the app's own asset set, not mockups._
+
 | Trim & color selection | Wheels & interior |
 |---|---|
 | <img src="public/cars/falcon-x/angles/velocity-red-3q.jpg" width="380" /> | <img src="public/cars/falcon-x/wheels/20-elite.png" width="380" /> |
 | **Interior finish** | **Build summary** |
 | <img src="public/cars/aureon-s/interior/cognac-nappa.jpg" width="380" /> | <img src="public/og-cover.png" width="380" /> |
-
-_(These are the real asset renders the configurator UI pulls from, not mockups.)_
 
 ---
 
@@ -137,4 +137,4 @@ Open to senior frontend and full-stack roles. Feel free to DM or connect.
 
 ## License
 
-MIT
+MIT (source code). The MIT license covers this repository's code only. Vehicle imagery under `public/cars/` is AI-generated and illustrative; we make no claim about its copyright status and it should not be treated as cleared for reuse outside this demo.

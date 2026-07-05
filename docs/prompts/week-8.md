@@ -3,8 +3,8 @@ Continue Car Configurator OS.
 Goal:
 Redesign the entire visual experience — landing, configurator, summary —
 as a cinematic automotive-industry portfolio piece ("The Private Viewing").
-Hybrid of Ferrari configurator drama (car-as-hero stage) and Audi/BMW
-configurator precision (restrained, typographic controls).
+Hybrid of stage-drama configurator theatrics (car-as-hero stage) and
+precision-focused configurator design (restrained, typographic controls).
 
 ## Design Direction
 - Color strategy: Drenched stage + Restrained controls. True stage-black
@@ -13,10 +13,10 @@ configurator precision (restrained, typographic controls).
   screen (price, active states, one CTA).
 - Scene: a private underground showroom at night, one spotlight on the
   car, quiet concierge-style controls.
-- Anchors: Ferrari configurator (stage drama, car fills the frame),
-  Audi visualizer (control precision, typographic restraint), Porsche
-  911 configurator (material/option richness — already reflected in
-  existing DESIGN.md).
+- Anchors: stage-drama configurators (car fills the frame), precision
+  visualizers (control precision, typographic restraint), and
+  material/option-rich configurators (already reflected in existing
+  DESIGN.md).
 
 ## Requirements
 

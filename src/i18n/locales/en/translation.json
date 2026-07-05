@@ -115,7 +115,7 @@
       },
       "conflictAware": {
         "title": "Conflict-aware packages",
-        "desc": "Incompatible option combinations are automatically detected and surfaced — the same logic a real OEM configurator uses."
+        "desc": "Incompatible option combinations are automatically detected and surfaced — the same kind of logic production car configurators use."
       },
       "typedDomain": {
         "title": "Typed domain model",
@@ -134,6 +134,6 @@
     "screenshotsPlaceholder": "Screenshots coming soon — run the configurator to see it live",
     "stackHeading": "Built with",
     "footer": "Car Configurator OS · MIT License · Open source",
-    "footerDisclaimer": "Falcon X and Aureon S are fictional vehicles created for this demo. All vehicle imagery is AI-generated. This project is not affiliated with, endorsed by, or representative of any real automobile manufacturer."
+    "footerDisclaimer": "Car Configurator OS is an independent demo project created for showcase purposes only. Falcon X and Aureon S are fictional, concept-style vehicles, and all vehicle imagery is AI-generated and illustrative. This project is not affiliated with, endorsed by, sponsored by, or approved by any automotive manufacturer, distributor, or brand owner, and no specifications shown are official manufacturer data."
   }
 }

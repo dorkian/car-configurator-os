@@ -4,6 +4,8 @@
 
 product
 
+> Note: Car Configurator OS is an independent demo project, not affiliated with, endorsed by, or sponsored by any automotive manufacturer, and no vehicle or specification in this app represents a real production model.
+
 ## Users
 
 Two overlapping audiences interact with this surface:
@@ -17,7 +19,7 @@ The primary task on this screen: move through trim → color → wheels → inte
 
 Car Configurator OS is an open-source, client-side automotive configurator. It exists to demonstrate senior-level frontend engineering — pricing rule engines, compatibility constraints, trim-change recovery, URL-serialized state — through a real, non-trivial UI rather than a toy app.
 
-Success looks like: a user can configure a car with the same fluency and visual confidence as a real manufacturer configurator (Porsche, Tesla), and a technical reviewer can see the underlying architecture is production-grade.
+Success looks like: a user can configure a car with the same fluency and visual confidence as a leading production configurator, and a technical reviewer can see the underlying architecture is production-grade.
 
 ## Brand Personality
 
@@ -27,7 +29,7 @@ Success looks like: a user can configure a car with the same fluency and visual 
 - Confident: the UI doesn't hedge or over-explain; it shows the car, the price, and the next decision.
 - Engineered: reads like a product built by someone who understands automotive UX conventions, not a generic e-commerce configurator skin.
 
-Reference: **Porsche's configurator** — richer material/color presentation than Tesla's minimalism, denser and more considered option detail, warmer imagery treatment, still restrained rather than showy.
+Reference: **premium material/color presentation** — richer than minimalist alternatives, denser and more considered option detail, warmer imagery treatment, still restrained rather than showy.
 
 ## Anti-references
 
