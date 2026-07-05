@@ -1,0 +1,139 @@
+{
+  "common": {
+    "total": "Total",
+    "loading": "Loading configurator…",
+    "backToHome": "Back to home",
+    "notFoundCode": "404",
+    "pageNotFound": "Page not found."
+  },
+  "nav": {
+    "configuratorLabel": "Configurator",
+    "categoryNavLabel": "Configuration category"
+  },
+  "drawer": {
+    "close": "Close panel"
+  },
+  "categories": {
+    "trim": "Trim",
+    "color": "Exterior Color",
+    "wheels": "Wheels",
+    "interior": "Interior",
+    "packages": "Packages",
+    "packagesNone": "None",
+    "packagesSelected_one": "{{count}} selected",
+    "packagesSelected_other": "{{count}} selected"
+  },
+  "pricing": {
+    "included": "Included"
+  },
+  "colorType": {
+    "standard": "Standard",
+    "metallic": "Metallic",
+    "premium": "Premium"
+  },
+  "material": {
+    "fabric": "Fabric",
+    "leather": "Leather",
+    "alcantara": "Alcantara"
+  },
+  "trim": {
+    "moreFeatures_one": "+{{count}} more",
+    "moreFeatures_other": "+{{count}} more"
+  },
+  "empty": {
+    "noTrims": "No trims available.",
+    "noColors": "No colors available for this trim.",
+    "noWheels": "No wheels available for this trim.",
+    "noInteriors": "No interiors available for this trim.",
+    "noPackages": "No packages available for this trim."
+  },
+  "package": {
+    "conflictNote": "⚠ Conflicts with {{names}} — tap to swap",
+    "confirmTitle": "Replace {{names}}?",
+    "confirmMessage_one": "{{packageName}} isn't compatible with {{names}}. Selecting it will remove that package from your build.",
+    "confirmMessage_other": "{{packageName}} isn't compatible with {{names}}. Selecting it will remove those packages from your build.",
+    "confirmSelect": "Select {{packageName}}",
+    "keepCurrent": "Keep current"
+  },
+  "dialog": {
+    "continue": "Continue",
+    "cancel": "Cancel"
+  },
+  "recovery": {
+    "heading": "Trim change adjusted your selections:",
+    "dismiss": "Dismiss notification"
+  },
+  "priceFooter": {
+    "viewBreakdown": "View Breakdown",
+    "shareBuild": "Share Build",
+    "linkCopied": "Link copied!"
+  },
+  "summary": {
+    "title": "Your {{carName}} — Build Summary",
+    "backToConfigurator": "← Back to Configurator",
+    "signature": "Configured with Car Configurator OS — an open-source project."
+  },
+  "theme": {
+    "switchToLight": "Switch to light mode",
+    "switchToDark": "Switch to dark mode"
+  },
+  "language": {
+    "label": "Language"
+  },
+  "disclaimer": {
+    "short": "Fictional vehicle · AI-generated imagery · Not affiliated with any manufacturer"
+  },
+  "preview": {
+    "angleSwitcherLabel": "Preview angle",
+    "angle": {
+      "3q": "3/4",
+      "front": "Front",
+      "side": "Side",
+      "rear": "Rear"
+    }
+  },
+  "home": {
+    "eyebrow": "Open Source",
+    "titleLine1": "Configure.",
+    "titleEm": "Without",
+    "titleLine2": "a backend.",
+    "tagline": "An open-source automotive configurator built entirely client-side. Real-time pricing, shareable URLs, conflict detection — no server required.",
+    "chooseCar": "Choose a model to configure",
+    "configure": "Configure",
+    "fromPrice": "From {{price}}",
+    "viewGithub": "View on GitHub",
+    "badge": "MIT License · No backend · No login",
+    "featuresHeading": "What's inside",
+    "features": {
+      "liveConfigurator": {
+        "title": "Live configurator",
+        "desc": "Pick trim, color, wheels, interior, and packages. Pricing updates in real time with full line-item breakdown."
+      },
+      "shareableBuilds": {
+        "title": "Shareable builds",
+        "desc": "Every configuration is encoded into the URL. No login, no server, no database — share a link, anyone sees your exact build."
+      },
+      "conflictAware": {
+        "title": "Conflict-aware packages",
+        "desc": "Incompatible option combinations are automatically detected and surfaced — the same logic a real OEM configurator uses."
+      },
+      "typedDomain": {
+        "title": "Typed domain model",
+        "desc": "Car, Trim, Color, Wheel, Interior, Package — fully modeled in TypeScript with pricing and validation as pure functions."
+      },
+      "zeroCost": {
+        "title": "Zero-cost hosting",
+        "desc": "Fully static — deploys in one command to GitHub Pages, Vercel, or Netlify. No backend required."
+      },
+      "testedLogic": {
+        "title": "Tested core logic",
+        "desc": "Pricing, rule validation, and URL codec covered by Vitest unit tests. CI-ready from day one."
+      }
+    },
+    "screenshotsHeading": "Screenshots",
+    "screenshotsPlaceholder": "Screenshots coming soon — run the configurator to see it live",
+    "stackHeading": "Built with",
+    "footer": "Car Configurator OS · MIT License · Open source",
+    "footerDisclaimer": "Falcon X and Aureon S are fictional vehicles created for this demo. All vehicle imagery is AI-generated. This project is not affiliated with, endorsed by, or representative of any real automobile manufacturer."
+  }
+}

@@ -1,0 +1,95 @@
+[
+  {
+    "id": "pkg-comfort",
+    "name": "Comfort Pack",
+    "description": "Premium interior upgrades for long-distance comfort.",
+    "features": [
+      "Heated front seats",
+      "Leather steering wheel",
+      "Auto-dimming rear-view mirror",
+      "Memory seat positions"
+    ],
+    "priceModifier": 180000,
+    "incompatibleWith": []
+  },
+  {
+    "id": "pkg-safety",
+    "name": "Safety Plus",
+    "description": "Advanced driver assistance for confident, connected driving.",
+    "features": [
+      "Adaptive cruise control",
+      "Lane-keep assist",
+      "Blind-spot monitoring",
+      "Rear cross-traffic alert",
+      "Automatic emergency braking"
+    ],
+    "priceModifier": 250000,
+    "incompatibleWith": []
+  },
+  {
+    "id": "pkg-tech",
+    "name": "Tech Pack",
+    "description": "Next-level connectivity and convenience.",
+    "features": [
+      "Head-up display",
+      "360° surround camera",
+      "Wireless phone charger",
+      "Remote start",
+      "Wi-Fi hotspot"
+    ],
+    "priceModifier": 320000,
+    "incompatibleWith": []
+  },
+  {
+    "id": "pkg-performance",
+    "name": "Performance Pack",
+    "description": "Track-tuned upgrades for the driver who wants it all.",
+    "features": [
+      "Sport-tuned suspension",
+      "Brembo brake upgrade",
+      "Launch control",
+      "Drive mode selector (Eco / Comfort / Sport / Track)"
+    ],
+    "priceModifier": 550000,
+    "incompatibleWith": ["pkg-comfort"]
+  },
+  {
+    "id": "pkg-serenity",
+    "name": "Serenity Pack",
+    "description": "Cabin refinements for an exceptionally quiet, composed ride.",
+    "features": [
+      "Active road-noise cancellation",
+      "Acoustic-laminated glass",
+      "Adaptive air suspension",
+      "Rear sunshades"
+    ],
+    "priceModifier": 260000,
+    "incompatibleWith": []
+  },
+  {
+    "id": "pkg-chauffeur",
+    "name": "Chauffeur Pack",
+    "description": "Rear-seat luxury for the passenger who's always driven.",
+    "features": [
+      "Reclining rear seats with massage",
+      "Rear-seat touchscreen controls",
+      "Extended legroom package",
+      "Rear-door sunshades"
+    ],
+    "priceModifier": 480000,
+    "incompatibleWith": ["pkg-serenity"]
+  },
+  {
+    "id": "pkg-executive-tech",
+    "name": "Executive Tech Pack",
+    "description": "Next-generation cabin technology for the connected executive.",
+    "features": [
+      "Rear-seat entertainment displays",
+      "Night vision assist",
+      "Augmented-reality head-up display",
+      "Executive digital key sharing"
+    ],
+    "priceModifier": 390000,
+    "incompatibleWith": []
+  }
+]

@@ -1,0 +1,51 @@
+[
+  {
+    "id": "w-17-alloy",
+    "name": "17\" Classic Alloy",
+    "size": 17,
+    "image": "/cars/falcon-x/wheels/17-alloy.png",
+    "priceModifier": 0
+  },
+  {
+    "id": "w-18-sport",
+    "name": "18\" Sport Alloy",
+    "size": 18,
+    "image": "/cars/falcon-x/wheels/18-sport.png",
+    "priceModifier": 60000
+  },
+  {
+    "id": "w-19-performance",
+    "name": "19\" Performance Forged",
+    "size": 19,
+    "image": "/cars/falcon-x/wheels/19-performance.png",
+    "priceModifier": 140000
+  },
+  {
+    "id": "w-20-elite",
+    "name": "20\" Elite Gloss",
+    "size": 20,
+    "image": "/cars/falcon-x/wheels/20-elite.png",
+    "priceModifier": 220000
+  },
+  {
+    "id": "w-18-serenity",
+    "name": "18\" Serenity",
+    "size": 18,
+    "image": "/cars/aureon-s/wheels/18-serenity.png",
+    "priceModifier": 0
+  },
+  {
+    "id": "w-19-prestige",
+    "name": "19\" Prestige",
+    "size": 19,
+    "image": "/cars/aureon-s/wheels/19-prestige.png",
+    "priceModifier": 90000
+  },
+  {
+    "id": "w-20-sovereign",
+    "name": "20\" Sovereign",
+    "size": 20,
+    "image": "/cars/aureon-s/wheels/20-sovereign.png",
+    "priceModifier": 180000
+  }
+]

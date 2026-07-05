@@ -1,0 +1,20 @@
+[
+  {
+    "id": "falcon-x",
+    "name": "Falcon X",
+    "slug": "falcon-x",
+    "basePrice": 4200000,
+    "tagline": "Performance redefined. Configure yours.",
+    "availableTrims": ["falcon-x-standard", "falcon-x-sport", "falcon-x-elite"],
+    "heroImage": "/cars/falcon-x/hero/hero.jpg"
+  },
+  {
+    "id": "aureon-s",
+    "name": "Aureon S",
+    "slug": "aureon-s",
+    "basePrice": 6800000,
+    "tagline": "Quiet confidence. Configure yours.",
+    "availableTrims": ["aureon-s-elegance", "aureon-s-prestige", "aureon-s-signature"],
+    "heroImage": "/cars/aureon-s/hero/hero.jpg"
+  }
+]

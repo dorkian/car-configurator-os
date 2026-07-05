@@ -1,0 +1,139 @@
+{
+  "common": {
+    "total": "Totale",
+    "loading": "Caricamento configuratore…",
+    "backToHome": "Torna alla home",
+    "notFoundCode": "404",
+    "pageNotFound": "Pagina non trovata."
+  },
+  "nav": {
+    "configuratorLabel": "Configuratore",
+    "categoryNavLabel": "Categoria di configurazione"
+  },
+  "drawer": {
+    "close": "Chiudi pannello"
+  },
+  "categories": {
+    "trim": "Allestimento",
+    "color": "Colore esterno",
+    "wheels": "Cerchi",
+    "interior": "Interni",
+    "packages": "Pacchetti",
+    "packagesNone": "Nessuno",
+    "packagesSelected_one": "{{count}} selezionato",
+    "packagesSelected_other": "{{count}} selezionati"
+  },
+  "pricing": {
+    "included": "Incluso"
+  },
+  "colorType": {
+    "standard": "Standard",
+    "metallic": "Metallizzato",
+    "premium": "Premium"
+  },
+  "material": {
+    "fabric": "Tessuto",
+    "leather": "Pelle",
+    "alcantara": "Alcantara"
+  },
+  "trim": {
+    "moreFeatures_one": "+{{count}} in più",
+    "moreFeatures_other": "+{{count}} in più"
+  },
+  "empty": {
+    "noTrims": "Nessun allestimento disponibile.",
+    "noColors": "Nessun colore disponibile per questo allestimento.",
+    "noWheels": "Nessun cerchio disponibile per questo allestimento.",
+    "noInteriors": "Nessun interno disponibile per questo allestimento.",
+    "noPackages": "Nessun pacchetto disponibile per questo allestimento."
+  },
+  "package": {
+    "conflictNote": "⚠ In conflitto con {{names}} — tocca per sostituire",
+    "confirmTitle": "Sostituire {{names}}?",
+    "confirmMessage_one": "{{packageName}} non è compatibile con {{names}}. Selezionandolo, quel pacchetto verrà rimosso dalla tua configurazione.",
+    "confirmMessage_other": "{{packageName}} non è compatibile con {{names}}. Selezionandolo, quei pacchetti verranno rimossi dalla tua configurazione.",
+    "confirmSelect": "Seleziona {{packageName}}",
+    "keepCurrent": "Mantieni l'attuale"
+  },
+  "dialog": {
+    "continue": "Continua",
+    "cancel": "Annulla"
+  },
+  "recovery": {
+    "heading": "Il cambio di allestimento ha modificato le tue selezioni:",
+    "dismiss": "Chiudi notifica"
+  },
+  "priceFooter": {
+    "viewBreakdown": "Vedi dettaglio",
+    "shareBuild": "Condividi",
+    "linkCopied": "Link copiato!"
+  },
+  "summary": {
+    "title": "La tua {{carName}} — Riepilogo configurazione",
+    "backToConfigurator": "← Torna al configuratore",
+    "signature": "Configurato con Car Configurator OS — un progetto open source."
+  },
+  "theme": {
+    "switchToLight": "Passa alla modalità chiara",
+    "switchToDark": "Passa alla modalità scura"
+  },
+  "language": {
+    "label": "Lingua"
+  },
+  "disclaimer": {
+    "short": "Veicolo immaginario · Immagini generate da IA · Non affiliato ad alcuna casa automobilistica"
+  },
+  "preview": {
+    "angleSwitcherLabel": "Angolazione anteprima",
+    "angle": {
+      "3q": "3/4",
+      "front": "Frontale",
+      "side": "Laterale",
+      "rear": "Posteriore"
+    }
+  },
+  "home": {
+    "eyebrow": "Open Source",
+    "titleLine1": "Configura.",
+    "titleEm": "Senza",
+    "titleLine2": "un backend.",
+    "tagline": "Un configuratore automobilistico open source, interamente client-side. Prezzi in tempo reale, URL condivisibili, rilevamento dei conflitti — nessun server richiesto.",
+    "chooseCar": "Scegli un modello da configurare",
+    "configure": "Configura",
+    "fromPrice": "A partire da {{price}}",
+    "viewGithub": "Vedi su GitHub",
+    "badge": "Licenza MIT · Nessun backend · Nessun accesso richiesto",
+    "featuresHeading": "Cosa include",
+    "features": {
+      "liveConfigurator": {
+        "title": "Configuratore live",
+        "desc": "Scegli allestimento, colore, cerchi, interni e pacchetti. Il prezzo si aggiorna in tempo reale con un dettaglio completo delle voci."
+      },
+      "shareableBuilds": {
+        "title": "Configurazioni condivisibili",
+        "desc": "Ogni configurazione è codificata nell'URL. Nessun accesso, nessun server, nessun database — condividi un link e chiunque vedrà la tua configurazione esatta."
+      },
+      "conflictAware": {
+        "title": "Pacchetti con controllo conflitti",
+        "desc": "Le combinazioni di opzioni incompatibili vengono rilevate e segnalate automaticamente — la stessa logica usata da un vero configuratore di casa automobilistica."
+      },
+      "typedDomain": {
+        "title": "Modello di dominio tipizzato",
+        "desc": "Auto, Allestimento, Colore, Cerchio, Interno, Pacchetto — modellati interamente in TypeScript, con prezzi e validazione come funzioni pure."
+      },
+      "zeroCost": {
+        "title": "Hosting a costo zero",
+        "desc": "Completamente statico — si distribuisce con un solo comando su GitHub Pages, Vercel o Netlify. Nessun backend necessario."
+      },
+      "testedLogic": {
+        "title": "Logica di base testata",
+        "desc": "Prezzi, validazione delle regole e codifica dell'URL sono coperti da test unitari Vitest. Pronto per la CI fin dal primo giorno."
+      }
+    },
+    "screenshotsHeading": "Screenshot",
+    "screenshotsPlaceholder": "Screenshot in arrivo — avvia il configuratore per vederlo dal vivo",
+    "stackHeading": "Realizzato con",
+    "footer": "Car Configurator OS · Licenza MIT · Open source",
+    "footerDisclaimer": "Falcon X e Aureon S sono veicoli immaginari creati per questa demo. Tutte le immagini dei veicoli sono generate tramite intelligenza artificiale. Questo progetto non è affiliato, sponsorizzato né rappresentativo di alcuna casa automobilistica reale."
+  }
+}

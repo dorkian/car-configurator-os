@@ -1,0 +1,50 @@
+[
+  {
+    "id": "int-black-leather",
+    "name": "Black Leather",
+    "material": "leather",
+    "colorName": "Obsidian Black",
+    "thumbnail": "/cars/falcon-x/interior/black-leather.jpg",
+    "priceModifier": 0
+  },
+  {
+    "id": "int-cream-leather",
+    "name": "Cream Leather",
+    "material": "leather",
+    "colorName": "Ivory Cream",
+    "thumbnail": "/cars/falcon-x/interior/cream-leather.jpg",
+    "priceModifier": 80000
+  },
+  {
+    "id": "int-dark-alcantara",
+    "name": "Dark Alcantara",
+    "material": "alcantara",
+    "colorName": "Carbon Night",
+    "thumbnail": "/cars/falcon-x/interior/dark-alcantara.jpg",
+    "priceModifier": 200000
+  },
+  {
+    "id": "int-cognac-nappa",
+    "name": "Cognac Nappa Leather",
+    "material": "leather",
+    "colorName": "Cognac Tan",
+    "thumbnail": "/cars/aureon-s/interior/cognac-nappa.jpg",
+    "priceModifier": 0
+  },
+  {
+    "id": "int-ivory-quilted",
+    "name": "Ivory Quilted Leather",
+    "material": "leather",
+    "colorName": "Ivory White",
+    "thumbnail": "/cars/aureon-s/interior/ivory-quilted.jpg",
+    "priceModifier": 150000
+  },
+  {
+    "id": "int-executive-wood",
+    "name": "Executive Wood & Leather",
+    "material": "leather",
+    "colorName": "Walnut & Onyx",
+    "thumbnail": "/cars/aureon-s/interior/executive-wood.jpg",
+    "priceModifier": 280000
+  }
+]

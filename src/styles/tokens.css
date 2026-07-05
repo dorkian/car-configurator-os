@@ -1,0 +1,132 @@
+:root {
+  /* Brand — Electric Cobalt */
+  --color-brand-50: #eef2ff;
+  --color-brand-100: #dbe4ff;
+  --color-brand-500: #2f5ce8;
+  --color-brand-600: #1e46c9;
+  --color-brand-700: #16359e;
+
+  /* Neutral */
+  --color-neutral-0: #ffffff;
+  --color-neutral-50: #f9fafb;
+  --color-neutral-100: #f3f4f6;
+  --color-neutral-200: #e5e7eb;
+  --color-neutral-300: #d1d5db;
+  --color-neutral-400: #9ca3af;
+  --color-neutral-500: #6b7280;
+  --color-neutral-600: #4b5563;
+  --color-neutral-700: #374151;
+  --color-neutral-800: #1f2937;
+  --color-neutral-900: #0d1220;
+  --color-neutral-950: #010204;
+
+  /* Stage (spotlight/showroom effects — dark theme only) */
+  --stage-spotlight: radial-gradient(ellipse 70% 55% at 50% 38%, rgba(255 255 255 / 0.05) 0%, transparent 65%);
+  --stage-floor-fade: linear-gradient(180deg, transparent 0%, rgba(0 0 0 / 0.6) 100%);
+
+  /* Semantic */
+  --color-success: #16a34a;
+  --color-warning: #d97706;
+  --color-error: #dc2626;
+
+  /* Typography */
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-base: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.25rem;
+  --font-size-2xl: 1.5rem;
+  --font-size-3xl: 1.875rem;
+  --font-size-4xl: 2.25rem;
+
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  --line-height-tight: 1.25;
+  --line-height-snug: 1.375;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.625;
+
+  /* Spacing (4px base) */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-20: 5rem;
+  --space-24: 6rem;
+
+  /* Border radius */
+  --radius-sm: 0.25rem;
+  --radius-md: 0.375rem;
+  --radius-lg: 0.5rem;
+  --radius-xl: 0.75rem;
+  --radius-2xl: 1rem;
+  --radius-full: 9999px;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+
+  /* Transitions */
+  --duration-fast: 100ms;
+  --duration-normal: 200ms;
+  --duration-slow: 300ms;
+  --ease-default: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/*
+ * Light theme — the neutral ramp is inverted so every existing component
+ * (which references a specific index for a specific role, e.g. 950 for
+ * shell background, 0 for primary text) keeps the same role under either
+ * theme without touching component CSS.
+ */
+[data-theme='light'] {
+  --color-neutral-0: #05070d;
+  --color-neutral-50: #0a0e1a;
+  --color-neutral-100: #111827;
+  --color-neutral-200: #1f2937;
+  --color-neutral-300: #374151;
+  --color-neutral-400: #4b5563;
+  --color-neutral-500: #6b7280;
+  --color-neutral-600: #9aa0ac;
+  --color-neutral-700: #c9cdd6;
+  --color-neutral-800: #e2e5ea;
+  --color-neutral-900: #eef0f3;
+  --color-neutral-950: #f7f8fa;
+
+  /* Stage (studio cyclorama — soft even daylight, no hard spotlight) */
+  --stage-spotlight: radial-gradient(ellipse 80% 60% at 50% 40%, rgba(255 255 255 / 0.5) 0%, transparent 70%);
+  --stage-floor-fade: linear-gradient(180deg, transparent 0%, rgba(0 0 0 / 0.04) 100%);
+}
+
+/*
+ * Pages that are deliberately always-light regardless of the app theme
+ * (e.g. the shareable build summary, styled as a printable receipt) pin
+ * the neutral scale back to its canonical light-surface values so the
+ * light/dark toggle can't invert them.
+ */
+.light-surface {
+  --color-neutral-0: #ffffff;
+  --color-neutral-50: #f9fafb;
+  --color-neutral-100: #f3f4f6;
+  --color-neutral-200: #e5e7eb;
+  --color-neutral-300: #d1d5db;
+  --color-neutral-400: #9ca3af;
+  --color-neutral-500: #6b7280;
+  --color-neutral-600: #4b5563;
+  --color-neutral-700: #374151;
+  --color-neutral-800: #1f2937;
+  --color-neutral-900: #111827;
+  --color-neutral-950: #030712;
+}

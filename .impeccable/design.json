@@ -1,0 +1,120 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-07-01T11:30:00Z",
+  "title": "Design System: Car Configurator OS",
+  "extensions": {
+    "colorMeta": {
+      "electric-cobalt": {
+        "role": "primary",
+        "displayName": "Electric Cobalt",
+        "canonical": "oklch(52% 0.21 265)",
+        "tonalRamp": ["#0a1440", "#122870", "#1a3aa0", "#2247c4", "#2f5ce8", "#5b7ff0", "#8ba3f5", "#c5d2fb"]
+      },
+      "void-950": {
+        "role": "neutral",
+        "displayName": "Void 950 — Showroom Floor",
+        "canonical": "oklch(9% 0.02 265)",
+        "tonalRamp": ["#030712", "#0a0e1a", "#111827", "#1f2937", "#374151", "#6b7280", "#9ca3af", "#f9fafb"]
+      },
+      "signal-error": {
+        "role": "semantic",
+        "displayName": "Signal Error",
+        "canonical": "oklch(55% 0.19 25)"
+      },
+      "signal-success": {
+        "role": "semantic",
+        "displayName": "Signal Success",
+        "canonical": "oklch(56% 0.15 145)"
+      },
+      "signal-warning": {
+        "role": "semantic",
+        "displayName": "Signal Warning",
+        "canonical": "oklch(64% 0.14 65)"
+      }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "Car name / page-level heading, once per screen." },
+      "headline": { "displayName": "Headline", "purpose": "Section headers within the option side panel." },
+      "title": { "displayName": "Title", "purpose": "Uppercase category labels and current-selection indicators." },
+      "body": { "displayName": "Body", "purpose": "Option names, descriptions, feature lists." },
+      "label": { "displayName": "Label", "purpose": "Prices, button text, form-adjacent microcopy." }
+    },
+    "shadows": [
+      { "name": "rim-separation", "value": "inset 0 1px 0 0 rgba(255,255,255,0.06)", "purpose": "Lit top edge on cards/panels instead of a floating-card shadow." },
+      { "name": "selection-glow", "value": "0 0 0 2px var(--color-brand-500), 0 0 24px -8px var(--color-brand-500)", "purpose": "The only true shadow in the system — reserved for selected/active state." },
+      { "name": "focus-ring", "value": "0 0 0 3px var(--color-brand-500)", "purpose": "Keyboard focus indicator, crisp, no blur." }
+    ],
+    "motion": [
+      { "name": "ease-default", "value": "cubic-bezier(0.4, 0, 0.2, 1)", "purpose": "Default easing for all state transitions." },
+      { "name": "duration-fast", "value": "100ms", "purpose": "Micro-interactions (button press)." },
+      { "name": "duration-normal", "value": "200ms", "purpose": "Standard hover/selection transitions." },
+      { "name": "duration-slow", "value": "300ms", "purpose": "Panel/category switches, image crossfades." }
+    ],
+    "breakpoints": [
+      { "name": "mobile", "value": "900px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Main CTA — Share Build, confirm actions.",
+      "html": "<button class=\"ds-btn-primary\">Share Build</button>",
+      "css": ".ds-btn-primary { background: #2f5ce8; color: #ffffff; padding: 12px 24px; border: none; border-radius: 8px; font-weight: 600; font-size: 0.875rem; transition: background 0.2s cubic-bezier(0.4,0,0.2,1), transform 0.1s cubic-bezier(0.4,0,0.2,1); } .ds-btn-primary:hover { background: #1e46c9; } .ds-btn-primary:active { transform: scale(0.98); } .ds-btn-primary:focus-visible { outline: none; box-shadow: 0 0 0 3px #2f5ce8; }"
+    },
+    {
+      "name": "Option Card — Selected",
+      "kind": "card",
+      "refersTo": "option-card-selected",
+      "description": "The core building block of the side panel option list, selected state.",
+      "html": "<button class=\"ds-option-card ds-option-card--selected\" aria-pressed=\"true\"><span class=\"ds-option-card__name\">Sport</span><span class=\"ds-option-card__price\">+$4,000</span></button>",
+      "css": ".ds-option-card { display: flex; flex-direction: column; gap: 4px; background: #1f2937; border-radius: 12px; padding: 16px; border: 1px solid transparent; box-shadow: inset 0 1px 0 0 rgba(255,255,255,0.06); text-align: left; cursor: pointer; transition: background 0.2s, box-shadow 0.2s; } .ds-option-card--selected { background: #111827; box-shadow: inset 0 1px 0 0 rgba(255,255,255,0.06), 0 0 0 2px #2f5ce8, 0 0 24px -8px #2f5ce8; } .ds-option-card__name { color: #ffffff; font-weight: 500; font-size: 0.875rem; } .ds-option-card__price { color: #9ca3af; font-size: 0.75rem; }"
+    },
+    {
+      "name": "Option Card — Unavailable",
+      "kind": "card",
+      "refersTo": "option-card-unavailable",
+      "description": "Disabled/incompatible option — stays visible with inline explanation rather than being hidden.",
+      "html": "<button class=\"ds-option-card ds-option-card--unavailable\" disabled aria-disabled=\"true\"><span class=\"ds-option-card__name\">Performance Pack</span><span class=\"ds-option-card__note\">Conflicts with Comfort Pack</span></button>",
+      "css": ".ds-option-card--unavailable { opacity: 0.6; cursor: not-allowed; } .ds-option-card__note { color: #d97706; font-size: 0.75rem; }"
+    },
+    {
+      "name": "Side Panel Category Switcher",
+      "kind": "nav",
+      "refersTo": "category-switcher",
+      "description": "Persistent category tabs (Trim / Color / Wheels / Interior / Packages) replacing the long-scroll stacked layout.",
+      "html": "<nav class=\"ds-category-nav\"><button class=\"ds-category-tab ds-category-tab--active\">Trim</button><button class=\"ds-category-tab\">Color</button><button class=\"ds-category-tab\">Wheels</button></nav>",
+      "css": ".ds-category-nav { display: flex; flex-direction: column; gap: 4px; } .ds-category-tab { background: transparent; border: none; color: #6b7280; text-align: left; padding: 10px 12px; border-radius: 6px; font-size: 0.75rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; cursor: pointer; transition: color 0.2s, background 0.2s; } .ds-category-tab--active { color: #ffffff; background: #1f2937; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Showroom Floor",
+    "overview": "What it feels like to stand in front of the car under gallery lighting, configuration options laid out like a spec sheet on a podium beside it. The system is dark, confident, and exact — numbers are real, options are named and explained, depth comes from light, never drop shadow.",
+    "keyCharacteristics": [
+      "Dark void background (#030712) so paint colors and chrome read as the brightest elements on screen",
+      "One accent — Electric Cobalt — used sparingly for selection, focus, and price emphasis only",
+      "Flat surfaces separated by light (borders, rim glow, inset highlights), never by drop shadow",
+      "Every number is real and precise; no vague iconography standing in for information"
+    ],
+    "rules": [
+      { "name": "The One Accent Rule", "body": "Electric Cobalt appears only on selection state, primary actions, and price. It never decorates a heading or tints a background wash.", "section": "colors" },
+      { "name": "The One-Family Rule", "body": "No second typeface is introduced for personality. Hierarchy is entirely weight + size + tracking.", "section": "typography" },
+      { "name": "The No-Card-Shadow Rule", "body": "Nothing gets a soft ambient drop shadow for depth. Separation comes from borders, background-color steps, or the selection glow.", "section": "elevation" }
+    ],
+    "dos": [
+      "Do keep the vehicle preview as the largest, most persistent element on screen",
+      "Do use Electric Cobalt exclusively for selection state, primary actions, and price",
+      "Do separate surfaces with borders, background-color steps, or the selection glow",
+      "Do show unavailable options in place with an inline explanation",
+      "Do keep one typeface across every role"
+    ],
+    "donts": [
+      "Don't build this as generic e-commerce product-options UI",
+      "Don't stack all five option categories as one long scrolling column",
+      "Don't reach for SaaS dashboard conventions",
+      "Don't use color alone to indicate selected/disabled state",
+      "Don't add soft ambient card shadows anywhere in the dark configurator shell"
+    ]
+  }
+}

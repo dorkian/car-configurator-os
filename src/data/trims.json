@@ -1,0 +1,112 @@
+[
+  {
+    "id": "falcon-x-standard",
+    "carId": "falcon-x",
+    "name": "Standard",
+    "priceModifier": 0,
+    "features": [
+      "17\" alloy wheels",
+      "LED headlights",
+      "Apple CarPlay / Android Auto",
+      "8\" touchscreen",
+      "Dual-zone climate control"
+    ],
+    "availableColors": ["midnight-black", "alpine-white", "steel-grey"],
+    "availableWheels": ["w-17-alloy", "w-18-sport"],
+    "availableInteriors": ["int-black-leather", "int-cream-leather"],
+    "availablePackages": ["pkg-comfort", "pkg-safety"]
+  },
+  {
+    "id": "falcon-x-sport",
+    "carId": "falcon-x",
+    "name": "Sport",
+    "priceModifier": 400000,
+    "features": [
+      "19\" sport wheels",
+      "Sport suspension",
+      "LED headlights + fog lights",
+      "Heated front seats",
+      "10\" touchscreen",
+      "Wireless CarPlay / Android Auto"
+    ],
+    "availableColors": ["midnight-black", "alpine-white", "steel-grey", "velocity-red", "cobalt-blue"],
+    "availableWheels": ["w-18-sport", "w-19-performance"],
+    "availableInteriors": ["int-black-leather", "int-cream-leather", "int-dark-alcantara"],
+    "availablePackages": ["pkg-comfort", "pkg-safety", "pkg-tech"]
+  },
+  {
+    "id": "falcon-x-elite",
+    "carId": "falcon-x",
+    "name": "Elite",
+    "priceModifier": 900000,
+    "features": [
+      "20\" premium wheels",
+      "Adaptive air suspension",
+      "Matrix LED headlights",
+      "Heated + ventilated front & rear seats",
+      "12\" OLED touchscreen",
+      "Bose premium audio",
+      "Panoramic sunroof",
+      "Wireless CarPlay / Android Auto"
+    ],
+    "availableColors": ["midnight-black", "alpine-white", "steel-grey", "velocity-red", "cobalt-blue", "aurora-gold"],
+    "availableWheels": ["w-19-performance", "w-20-elite"],
+    "availableInteriors": ["int-black-leather", "int-cream-leather", "int-dark-alcantara"],
+    "availablePackages": ["pkg-comfort", "pkg-safety", "pkg-tech", "pkg-performance"]
+  },
+  {
+    "id": "aureon-s-elegance",
+    "carId": "aureon-s",
+    "name": "Elegance",
+    "priceModifier": 0,
+    "features": [
+      "18\" Serenity alloy wheels",
+      "LED adaptive headlights",
+      "Nappa leather upholstery",
+      "10\" touchscreen with wireless CarPlay / Android Auto",
+      "Three-zone climate control"
+    ],
+    "availableColors": ["midnight-black", "alpine-white", "graphite-slate"],
+    "availableWheels": ["w-18-serenity"],
+    "availableInteriors": ["int-cognac-nappa"],
+    "availablePackages": ["pkg-serenity"]
+  },
+  {
+    "id": "aureon-s-prestige",
+    "carId": "aureon-s",
+    "name": "Prestige",
+    "priceModifier": 700000,
+    "features": [
+      "19\" Prestige alloy wheels",
+      "Matrix LED headlights",
+      "Quilted leather upholstery",
+      "12\" OLED touchscreen",
+      "Four-zone climate control",
+      "Panoramic glass roof"
+    ],
+    "availableColors": ["midnight-black", "alpine-white", "graphite-slate", "champagne-pearl"],
+    "availableWheels": ["w-18-serenity", "w-19-prestige"],
+    "availableInteriors": ["int-cognac-nappa", "int-ivory-quilted"],
+    "availablePackages": ["pkg-serenity", "pkg-executive-tech"]
+  },
+  {
+    "id": "aureon-s-signature",
+    "carId": "aureon-s",
+    "name": "Signature",
+    "priceModifier": 1500000,
+    "features": [
+      "20\" Sovereign forged wheels",
+      "Matrix LED headlights with signature DRL",
+      "Executive wood & leather upholstery",
+      "14\" OLED touchscreen",
+      "Four-zone climate control",
+      "Panoramic glass roof",
+      "Rear executive seating package",
+      "Bespoke audio system"
+    ],
+    "availableColors": ["midnight-black", "alpine-white", "graphite-slate", "champagne-pearl", "burgundy-wine"],
+    "availableWheels": ["w-19-prestige", "w-20-sovereign"],
+    "availableInteriors": ["int-cognac-nappa", "int-ivory-quilted", "int-executive-wood"],
+    "availablePackages": ["pkg-serenity", "pkg-chauffeur", "pkg-executive-tech"]
+  }
+]
