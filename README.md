@@ -1,36 +1,53 @@
 # Car Configurator OS
 
-An open-source, client-side car configurator built with React, TypeScript, and Vite — built to demonstrate production-grade frontend architecture, business logic, and automotive UX thinking.
+An open-source, client-side car configurator built with React, TypeScript, and Vite. It's a working demo of production-grade frontend architecture, business logic, and automotive UX, not another CRUD sample.
 
-**Live demo:** _coming soon_  
-**Author:** [Ashkan Dorkian](https://github.com/dorkian) — AI-native frontend developer
+**Live demo:** _coming soon_
+**Author:** [Ashkan Dorkian](https://github.com/dorkian), AI-native frontend developer
 
-> **Disclaimer:** Falcon X and Aureon S are entirely fictional vehicles created for this demo. All vehicle imagery on this site is AI-generated. This project is not affiliated with, endorsed by, or representative of any real automobile manufacturer.
+> Falcon X and Aureon S aren't real cars. Every image on this site is AI-generated, and this project has no ties to any actual automaker.
+
+<p align="center">
+  <img src="public/cars/falcon-x/hero/hero.jpg" alt="Falcon X configurator hero shot" width="49%" />
+  <img src="public/cars/aureon-s/hero/hero.jpg" alt="Aureon S configurator hero shot" width="49%" />
+</p>
 
 ---
 
-## Why this project exists
+## Why this exists
 
-Most portfolio projects are shallow — a CRUD app, a weather widget, a clone. This one isn't. Car configurators are among the most UX-intensive products in the automotive industry: they handle deeply interlinked options, real-time pricing, constraint enforcement, and a zero-tolerance policy for invalid state. Building one from scratch — without a backend, without a paid service, and with full test coverage on the business logic — is a deliberate demonstration of how I think about frontend architecture when the stakes matter.
+Most portfolio projects are shallow: a to-do list, a weather widget, a clone of something famous. Car configurators sit at the opposite end of the spectrum. Tangled option dependencies, live pricing, hard constraints, and zero tolerance for an invalid build. I built one from scratch with no backend, no paid services, and full test coverage on the business logic, because that's the kind of problem that actually shows how I think.
 
-This project is a recruiter-facing open-source application. The code is the portfolio. The engineering decisions are the cover letter.
+This is a recruiter-facing open-source app. The code is the portfolio; the engineering decisions are the cover letter.
 
 ---
 
 ## What it demonstrates
 
-- **Feature-sliced architecture** — domain logic (`features/`), UI components, services, and types are cleanly separated; nothing leaks across layers
-- **Pricing rule engine** — integer-cent arithmetic, pure functions, line-item breakdown; no floating-point errors, no magic
-- **Option compatibility system** — `incompatibleWith` constraints enforced at the store level; disabled states and conflict explanations surfaced in the UI
-- **Trim-change recovery** — when trim changes make existing selections invalid, the store auto-recovers and a `RecoveryBanner` tells the user exactly what changed
-- **URL-serialized build state** — every configuration is a shareable link with no backend, no login, no storage
-- **Zustand store design** — selectors, actions, and derived state cleanly modeled; no prop drilling, no context soup
-- **Testable business logic** — `computePrice`, `validateBuild`, `getTrimRecovery`, `getConflicts` are pure functions with full Vitest coverage
-- **Accessible UI** — keyboard navigation, `aria-pressed`, `aria-label`, `aria-live` recovery banner, `:focus-visible` ring
+- **Feature-sliced architecture**: domain logic (`features/`), UI, services, and types stay in their own lanes, and nothing leaks across layers
+- **Pricing rule engine**: integer-cent arithmetic, pure functions, line-item breakdown, no floating-point surprises
+- **Option compatibility system**: `incompatibleWith` constraints enforced at the store level, with disabled states and conflict explanations surfaced in the UI
+- **Trim-change recovery**: when switching trims invalidates a selection, the store auto-recovers and a `RecoveryBanner` explains exactly what changed
+- **URL-serialized build state**: every configuration is a shareable link, no backend, no login, no storage
+- **Zustand store design**: selectors, actions, and derived state modeled cleanly, no prop drilling, no context soup
+- **Testable business logic**: `computePrice`, `validateBuild`, `getTrimRecovery`, `getConflicts` are pure functions with full Vitest coverage
+- **Accessible UI**: keyboard navigation, `aria-pressed`, `aria-label`, `aria-live` recovery banner, `:focus-visible` ring
 
 ---
 
-## Tech Stack
+## Screenshots
+
+| Trim & color selection | Wheels & interior |
+|---|---|
+| <img src="public/cars/falcon-x/angles/velocity-red-3q.jpg" width="380" /> | <img src="public/cars/falcon-x/wheels/20-elite.png" width="380" /> |
+| **Interior finish** | **Build summary** |
+| <img src="public/cars/aureon-s/interior/cognac-nappa.jpg" width="380" /> | <img src="public/og-cover.png" width="380" /> |
+
+_(These are the real asset renders the configurator UI pulls from, not mockups.)_
+
+---
+
+## Tech stack
 
 | | |
 |---|---|
@@ -68,25 +85,23 @@ src/
   test/          — unit tests (pricing, rules, url-state)
 ```
 
-See [docs/architecture.md](docs/architecture.md) for a deeper breakdown.  
-See [docs/domain-model.md](docs/domain-model.md) for entity definitions.  
-See [docs/pricing-rules.md](docs/pricing-rules.md) for pricing and validation logic.
+Deeper dives: [architecture](docs/architecture.md) · [domain model](docs/domain-model.md) · [pricing & validation rules](docs/pricing-rules.md)
 
 ---
 
 ## Product decisions
 
-**Why 2D-first?** Real 3D rendering (Three.js / WebGL) adds significant complexity, load time, and asset requirements. A 2D configurator with a strong layout and live pricing demonstrates the same business logic and UX thinking without the distraction. 3D is a v2 scope item.
+**Why 2D, not 3D?** A real 3D viewer (Three.js/WebGL) adds load time, asset overhead, and complexity that would drown out the actual point of this project. A tight 2D layout with live pricing proves the same business logic and UX thinking without the distraction. 3D is on the v2 list.
 
-**Why no backend?** URL-serialized state means every build is a shareable link with zero infrastructure cost. State lives in the URL; validation runs on the client. This is the right call for a v1 open-source portfolio project.
+**Why no backend?** Encoding state in the URL means every build is a shareable link with zero infrastructure. Validation runs entirely client-side. For a v1 portfolio piece, that's the right trade, not a limitation I'm apologizing for.
 
-**What v2 looks like:** Real car imagery per trim/color/wheel combination, a 3D viewer, user accounts for saved builds, and a headless catalog API to replace the static JSON.
+**What v2 looks like:** real per-combination car imagery, a 3D viewer, saved builds behind user accounts, and a headless catalog API in place of the static JSON.
 
-See [docs/ux-decisions.md](docs/ux-decisions.md) for all UX rationale.
+Full rationale: [docs/ux-decisions.md](docs/ux-decisions.md)
 
 ---
 
-## Local setup
+## Run it locally
 
 ```bash
 git clone https://github.com/dorkian/car-configurator-os.git
@@ -95,26 +110,26 @@ npm install
 npm run dev
 ```
 
-Open [http://localhost:5173](http://localhost:5173).
+Then open [http://localhost:5173](http://localhost:5173).
 
 ## Scripts
 
-| Command | Description |
+| Command | What it does |
 |---|---|
-| `npm run dev` | Start dev server |
-| `npm run build` | Type-check + production build |
-| `npm run test` | Run unit tests |
+| `npm run dev` | Start the dev server |
+| `npm run build` | Type-check, then build for production |
+| `npm run test` | Run the unit tests |
 | `npm run lint` | Lint source files |
-| `npm run type-check` | TypeScript check without emit |
+| `npm run type-check` | TypeScript check, no emit |
 
 ---
 
 ## About
 
-**Ashkan Dorkian** — AI-native frontend developer. React · TypeScript · Vite · n8n · FastAPI.
+**Ashkan Dorkian**, AI-native frontend developer. React · TypeScript · Vite · n8n · FastAPI.
 
 - GitHub: [github.com/dorkian](https://github.com/dorkian)
-- LinkedIn: [linkedin.com/in/ashkandorkian](https://linkedin.com/in/ashkandorkian)
+- LinkedIn: [linkedin.com/in/adorkian](https://linkedin.com/in/adorkian)
 
 Open to senior frontend and full-stack roles. Feel free to DM or connect.
 
